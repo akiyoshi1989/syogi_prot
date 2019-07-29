@@ -1,0 +1,16 @@
+spool_dir: /vagrant/syogi/spool/
+log:
+  log_file: /vagrant/syogi/log/log_file.log
+  log_period: weekly
+url:
+  target_url: https://shogiwars.heroz.jp/web_app/standard/
+  login_page: https://shogiwars.heroz.jp/loginm/WEBAPP_a33d8425-e3a6-482d-8b94-c0c065de0927/524a16f571ce0486e5f34c1541346e5d2ef14948?version=webapp_5.0.11_standard&locale=ja
+  history_page: https://shogiwars.heroz.jp/games/history?user_id=
+  history_last: "&gtype=&version=webapp_5.0.11_standard&locale=ja"
+  kif_base_url: https://kif-pona.heroz.jp/games/
+user:
+  name: user_name # loginに利用
+  password: password # loginに利用
+riak:
+  bucket_type: syogi
+  bucket: user_name
